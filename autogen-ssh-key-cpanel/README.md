@@ -10,11 +10,11 @@ Script per la generazione automatica della chiave SSH da utilizzare in CPanel pe
 
 **Parametri:**
 
-- **NOME_CHIAVE** - Nome della chiave.
-- **COMMENTO** - Commento della chiave.
+- **NOME_CHIAVE** - nome della chiave.
+- **COMMENTO** - commento della chiave.
 
 ## Configurazione
-È possibile configurare lo script modificando alcune costanti.
+È possibile configurare il comportamento dello script modificando alcune costanti presenti all'interno dello script.
 
 **Costanti configurabili**:
 
