@@ -8,6 +8,10 @@ Script per la generazione automatica della chiave SSH da utilizzare in CPanel pe
 ./autogen-ssh-key-cpanel.sh NOME_CHIAVE COMMENTO
 ```
 
+**Parametri:**
+
+- **NOME_CHIAVE** - Nome della chiave.
+- **COMMENTO** - Commento della chiave.
 
 ## Configurazione
 È possibile configurare lo script modificando alcune costanti.
