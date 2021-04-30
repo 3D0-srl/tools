@@ -33,8 +33,6 @@ main(){
     COMMENT=$2
     PATHNAME="$HOME/.ssh/$KEYNAME"
 
-    echo $1
-
     # check arguments
     if [[ -z $KEYNAME ]] || [[ -z $COMMENT ]]; then
         echo "Error: key name or comment are not set"
