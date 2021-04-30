@@ -10,8 +10,8 @@ Script per la generazione automatica della chiave SSH da utilizzare in CPanel pe
 
 
 ## Configurazione
-È possibile configurare lo script modificando 
+È possibile configurare lo script modificando alcune costanti.
 
-Constanti configurabili:
+**Costanti configurabili**:
 
 - **PATH_PUBKEY** - path storage chiave pubblica per consultazione.
