@@ -1,4 +1,4 @@
-# deploy laravel
+# Deploy laravel
 
 File di configurazione per il deploy su cpanel di un progetto Laravel
 
