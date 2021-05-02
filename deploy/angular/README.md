@@ -3,7 +3,7 @@
 File di configurazione per il deploy su cpanel di un progetto Laravel
 
 ## Prerequisiti
-Assicurarsi che su cpanel sia installato **Node js**  
+Assicurarsi che su cpanel sia installato **Node js**.  
 L'installazione di Node js può essere effettuata mediante il tool strumento Easy Apache di WHM  
 https://docs.cpanel.net/knowledge-base/general-systems-administration/guide-to-node-js-installations/
 
