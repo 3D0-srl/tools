@@ -1,9 +1,9 @@
-# Deploy laravel
+# Deploy Laravel
 
 File di configurazione per il deploy su cpanel di un progetto Laravel
 
 ## Prerequisiti
-Assicurarsi che siano soddisfatti i rquisiti di sistema presenti nella documentazione ufficiale di Laravel  
+Assicurarsi che siano soddisfatti i requisiti di sistema presenti nella documentazione ufficiale di Laravel  
 https://laravel.com/docs/8.x/deployment
 
 ## Utilizzo

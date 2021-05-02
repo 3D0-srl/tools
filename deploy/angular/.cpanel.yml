@@ -1,0 +1,9 @@
+---
+deployment:
+  tasks:
+    - export NPM_PATH=/opt/cpanel/ea-nodejs10/bin/npm
+    - export DIST_PATH=dist_name
+    - export DEPLOY_PATH=/home/cpaneldomain
+    - NPM_PATH build --prod
+    - /bin/mkdir -p $DEPLOY_PATH
+    - /bin/cp -r ./dist/$DIST_PATH $DEPLOY_PATH
