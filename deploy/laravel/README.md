@@ -8,7 +8,7 @@ https://laravel.com/docs/8.x/deployment
 
 ## Utilizzo
 Il file deve essere caricato nella root del progetto.  
-Occorre inserire nel file [[.gitignore]] la seguente riga
+Occorre inserire nel file **.gitignore** la seguente riga
 
 ```bash
 .bashrc
