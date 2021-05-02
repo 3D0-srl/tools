@@ -1,0 +1,22 @@
+---
+deployment:
+  tasks:
+    - export PHP_PATH=/bin/php
+    - export DEPLOY_PATH=/home/cpaneldomain
+    - export PUBLIC_DIR=public_html
+    - /bin/wget 'https://getcomposer.org/installer' -O composer-installer.php
+    - /bin/cp ./.env.production ./.env
+    - $PHP_PATH -d allow_url_fopen=on composer-installer.php
+    - $PHP_PATH composer.phar install --optimize-autoloader --no-dev
+    - $PHP_PATH artisan config:cache
+    - $PHP_PATH artisan route:cache
+    - $PHP_PATH artisan view:cache
+    - $PHP_PATH artisan migrate --force
+    - /bin/rm -f ./composer.phar
+    - /bin/rm -f ./composer-installer.php
+    - /bin/mkdir -p $DEPLOY_PATH
+    - /bin/cp -r * $DEPLOY_PATH
+    - /bin/rm -f  $DEPLOY_PATH/artisan
+    - /bin/mkdir -p  $DEPLOY_PATH/$PUBLIC_DIR
+    - /bin/cp ./public/* $DEPLOY_PATH/$PUBLIC_DIR/
+    - /bin/cp ./public/.htaccess $DEPLOYPATH/$PUBLIC_DIR/.htaccess
