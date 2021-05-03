@@ -1,6 +1,6 @@
 # autogen-ssh-key-cpanel
 
-Configurazione per poter poter esporre il CMS marion (web/database) in remoto.
+Configurazione per poter esporre il CMS marion (web/database) in remoto mediante ngrok.
 
 
 ## Utilizzo
