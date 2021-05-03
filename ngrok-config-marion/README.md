@@ -1,4 +1,4 @@
-# autogen-ssh-key-cpanel
+# ngrok-config-marion
 
 Configurazione per poter esporre il CMS marion (web/database) in remoto mediante ngrok.
 
