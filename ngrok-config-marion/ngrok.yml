@@ -1,0 +1,8 @@
+authtoken: <insert-authtoken-here>
+tunnels:
+  webserver:
+    addr: 80
+    proto: http
+  phpdb:
+    addr: 8080
+    proto: http
