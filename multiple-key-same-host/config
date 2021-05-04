@@ -1,0 +1,14 @@
+# ~/.ssh/config
+
+Host host1 
+Hostname github.com
+User git
+IdentityFile ~/.ssh/key1
+StrictHostKeyChecking no
+
+
+Host host2
+Hostname github.com
+User git
+IdentityFile ~/.ssh/ke2
+StrictHostKeyChecking no
