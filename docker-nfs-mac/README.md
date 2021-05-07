@@ -11,11 +11,11 @@ La lentezza di docker sta proprio in questa mappatura dei volummi per cui per po
 Per migliorare le performance su Mac OS una delle soluzione è di effettuare il binding tra il volume del container con un volume **nfs**.  
 Per effettuare questa operazione occorre  
 
-1. eseguire lo script **env_vars.sh** 
+- eseguire lo script **env_vars.sh** 
 ```bash
 ./env_vars.sh
 ```
-2. riportare il volume nel file **docker-compose.yml**  
+- riportare il volume nel file **docker-compose.yml**  
 
 **N.B.**
 Per funzioare il progetto deve essere sotto la cartella **/Users** e non in sottodirectory di quest'ultima.  
