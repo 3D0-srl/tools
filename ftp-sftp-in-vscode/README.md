@@ -1,6 +1,6 @@
 # ftp-sftp-in-vscode
 
-È possibile connettersi a dei server remoti (ftp/sftp) mediante l'estensione di VSCode: [SFTP -liximomo ](https://marketplace.visualstudio.com/items?itemName=liximomo.sftp).
+È possibile connettersi a dei server remoti (ftp/sftp) mediante l'estensione di VSCode: [SFTP - liximomo ](https://marketplace.visualstudio.com/items?itemName=liximomo.sftp).
 
 Questa estensione permette di visualizzare/prelevare i file presenti sul server remoto, effettuare la modifica in locale per poi effettuare nuovamente l'upload. (Mediante il menù contestuale > Upload).
 
