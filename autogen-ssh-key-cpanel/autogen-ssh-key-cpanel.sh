@@ -6,8 +6,6 @@
 #   ./autogen-ssh-key-cpanel.sh KEYNAME COMMENT
 #
 
-PATH_PUBKEY="$HOME/autogen-ssh-key-cpanel-key.pub"
-
 
 generate_keys()
 {
@@ -22,9 +20,10 @@ add_key_into_ssh_agent()
 }
 
 
-write_ssh_pub_key_on_file()
+print_ssh_pub_key_on_console()
 {
-    cat "$PATHNAME.pub" > $PATH_PUBKEY
+    echo -e '\nPUBLIC KEY:'
+    cat "$PATHNAME.pub"
 }
 
 
@@ -42,7 +41,7 @@ main(){
     # call functions
     generate_keys
     add_key_into_ssh_agent
-    write_ssh_pub_key_on_file
+    print_ssh_pub_key_on_console
 
     exit 0
 }
