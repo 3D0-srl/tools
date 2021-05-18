@@ -6,28 +6,24 @@
 #   ./autogen-ssh-key-cpanel.sh KEYNAME COMMENT
 #
 
-
-generate_keys()
-{
+generate_keys() {
     ssh-keygen -t rsa -b 4096 -f $PATHNAME -C $COMMENT -q -N ""
 }
 
 
-add_key_into_ssh_agent()
-{
+add_key_into_ssh_agent() {
     eval "$(ssh-agent -s)"
     ssh-add $PATHNAME
 }
 
 
-print_ssh_pub_key_on_console()
-{
+print_ssh_pub_key_on_console() {
     echo -e '\nPUBLIC KEY:'
     cat "$PATHNAME.pub"
 }
 
 
-main(){
+main() {
     KEYNAME=$1
     COMMENT=$2
     PATHNAME="$HOME/.ssh/$KEYNAME"
