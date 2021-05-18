@@ -23,10 +23,24 @@ print_ssh_pub_key_on_console() {
 }
 
 
+create_ssh_config() {
+    echo -e "Host $KEYNAME 
+    Hostname github.com
+    User git
+    IdentityFile $PATHNAME
+    StrictHostKeyChecking no \n" >> $PATH_SSH_CONFIG
+
+    chmod 600 $PATH_SSH_CONFIG
+} 
+
+
 main() {
     KEYNAME=$1
     COMMENT=$2
-    PATHNAME="$HOME/.ssh/$KEYNAME"
+    PATH_SSH="$HOME/.ssh"
+    PATH_SSH_CONFIG="$PATH_SSH/config"
+    PATHNAME="$PATH_SSH/$KEYNAME"
+    
 
     # check arguments
     if [[ -z $KEYNAME ]] || [[ -z $COMMENT ]]; then
@@ -38,6 +52,7 @@ main() {
     generate_keys
     add_key_into_ssh_agent
     print_ssh_pub_key_on_console
+    create_ssh_config
 
     exit 0
 }
