@@ -28,6 +28,9 @@ Lo script effettua le seguenti operazioni:
 ## Configurazione
 Lo script permette di essere configurato mediante i seguenti parametri presenti all'interno dello script.
 
+**Nota bene**: L'autenticazione al server deve essere effettuata in modalità passwordless.
+Pertanto è necessario configurare il client e il server mediante l'autenticazione con chiavi ssh prima di poter utilizzare lo script.
+
 ### Parametri di configurazione
 
 - **REMOTE_HOST** - indirizzo del server.
